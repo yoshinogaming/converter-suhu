@@ -1,0 +1,31 @@
+function konversiSuhu() {
+    const inputSuhu = parseFloat(document.getElementById("inputSuhu").value);
+    const inputIndeks = document.getElementById("inputIndeks").value;
+    let resultText = "";
+
+    if (inputIndeks === "C") {
+        resultText += `${inputSuhu.toFixed(3)} derajat Celcius :<br>`;
+        resultText += `Reamur     = ${(inputSuhu * 4 / 5).toFixed(3)} derajat R<br>`;
+        resultText += `Fahrenheit = ${((inputSuhu * 9 / 5) + 32).toFixed(3)} derajat F<br>`;
+        resultText += `Kelvin     = ${(inputSuhu + 273).toFixed(3)} derajat K<br>`;
+    } else if (inputIndeks === "R") {
+        resultText += `${inputSuhu.toFixed(3)} derajat Reamur :<br>`;
+        resultText += `Celcius    = ${(inputSuhu * 5 / 4).toFixed(3)} derajat C<br>`;
+        resultText += `Fahrenheit = ${((inputSuhu * 9 / 4) + 32).toFixed(3)} derajat F<br>`;
+        resultText += `Kelvin     = ${((inputSuhu * 5 / 4) + 273).toFixed(3)} derajat K<br>`;
+    } else if (inputIndeks === "F") {
+        resultText += `${inputSuhu.toFixed(3)} derajat Fahrenheit :<br>`;
+        resultText += `Celcius    = ${((5 / 9) * (inputSuhu - 32)).toFixed(3)} derajat C<br>`;
+        resultText += `Reamur     = ${(4 / 9 * (inputSuhu - 32)).toFixed(3)} derajat R<br>`;
+        resultText += `Kelvin     = ${((5 / 9) * (inputSuhu - 32) + 273).toFixed(3)} derajat K<br>`;
+    } else if (inputIndeks === "K") {
+        resultText += `${inputSuhu.toFixed(3)} derajat Kelvin :<br>`;
+        resultText += `Celcius    = ${(inputSuhu - 273).toFixed(3)} derajat C<br>`;
+        resultText += `Reamur     = ${(4 / 5 * (inputSuhu - 273)).toFixed(3)} derajat R<br>`;
+        resultText += `Fahrenheit = ${((9 / 5) * (inputSuhu - 273) + 32).toFixed(3)} derajat F<br>`;
+    } else {
+        resultText = "Indeks skala suhu yang anda masukkan tidak terdaftar di program kami.";
+    }
+    
+    document.getElementById("result").innerHTML = resultText;
+}
