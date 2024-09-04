@@ -9,20 +9,20 @@ function konversiSuhu() {
         resultText += `Fahrenheit = ${((inputSuhu * 9 / 5) + 32).toFixed(3)}° F<br>`;
         resultText += `Kelvin     = ${(inputSuhu + 273).toFixed(3)}° K<br>`;
     } else if (inputIndeks === "R") {
-        resultText += `${inputSuhu.toFixed(3)} ° Reamur :<br>`;
-        resultText += `Celcius    = ${(inputSuhu * 5 / 4).toFixed(3)} ° C<br>`;
-        resultText += `Fahrenheit = ${((inputSuhu * 9 / 4) + 32).toFixed(3)} ° F<br>`;
-        resultText += `Kelvin     = ${((inputSuhu * 5 / 4) + 273).toFixed(3)} ° K<br>`;
+        resultText += `${inputSuhu.toFixed(3)}° Reamur :<br>`;
+        resultText += `Celcius    = ${(inputSuhu * 5 / 4).toFixed(3)}° C<br>`;
+        resultText += `Fahrenheit = ${((inputSuhu * 9 / 4) + 32).toFixed(3)}° F<br>`;
+        resultText += `Kelvin     = ${((inputSuhu * 5 / 4) + 273).toFixed(3)}° K<br>`;
     } else if (inputIndeks === "F") {
-        resultText += `${inputSuhu.toFixed(3)} ° Fahrenheit :<br>`;
-        resultText += `Celcius    = ${((5 / 9) * (inputSuhu - 32)).toFixed(3)} ° C<br>`;
-        resultText += `Reamur     = ${(4 / 9 * (inputSuhu - 32)).toFixed(3)} ° R<br>`;
-        resultText += `Kelvin     = ${((5 / 9) * (inputSuhu - 32) + 273).toFixed(3)} ° K<br>`;
+        resultText += `${inputSuhu.toFixed(3)}° Fahrenheit :<br>`;
+        resultText += `Celcius    = ${((5 / 9) * (inputSuhu - 32)).toFixed(3)}° C<br>`;
+        resultText += `Reamur     = ${(4 / 9 * (inputSuhu - 32)).toFixed(3)}° R<br>`;
+        resultText += `Kelvin     = ${((5 / 9) * (inputSuhu - 32) + 273).toFixed(3)}° K<br>`;
     } else if (inputIndeks === "K") {
-        resultText += `${inputSuhu.toFixed(3)} ° Kelvin :<br>`;
-        resultText += `Celcius    = ${(inputSuhu - 273).toFixed(3)} ° C<br>`;
-        resultText += `Reamur     = ${(4 / 5 * (inputSuhu - 273)).toFixed(3)} ° R<br>`;
-        resultText += `Fahrenheit = ${((9 / 5) * (inputSuhu - 273) + 32).toFixed(3)} ° F<br>`;
+        resultText += `${inputSuhu.toFixed(3)}° Kelvin :<br>`;
+        resultText += `Celcius    = ${(inputSuhu - 273).toFixed(3)}° C<br>`;
+        resultText += `Reamur     = ${(4 / 5 * (inputSuhu - 273)).toFixed(3)}° R<br>`;
+        resultText += `Fahrenheit = ${((9 / 5) * (inputSuhu - 273) + 32).toFixed(3)}° F<br>`;
     } else {
         resultText = "Indeks skala suhu yang anda masukkan tidak terdaftar di program kami.";
     }

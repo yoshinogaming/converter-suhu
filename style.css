@@ -9,7 +9,7 @@ body {
     background-image: url(bg.png);
     font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     background-color: rgb(189, 189, 189);
-    display: flex;
+    display:flex;
     justify-content: center;
     align-items: center;
     height: 100vh;
