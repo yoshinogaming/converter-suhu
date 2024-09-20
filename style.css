@@ -4,7 +4,7 @@ body {
     border: 1px solid rgba(235, 235, 235, 0.1);
     border-radius: 15px;
     color: white;
-    font-size:larger;
+    font-size:x-large;
     position: relative;
     background-image: url(bg.png);
     font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
@@ -17,7 +17,7 @@ body {
 }
 
 .container {
-    padding: 20px;
+    padding: 50px;
     border-radius: 10px;
     box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
 }
@@ -27,16 +27,17 @@ body {
 }
 
 .form-group {
-    margin-bottom: 15px;
+    margin-bottom: 25px;
 }
 
 .form-group label {
     display: block;
-    margin-bottom: 5px;
+    margin-bottom: 25px;
 }
 
 .form-group input,
 .form-group select {
+    font-size: large;
     width: 100%;
     padding: 8px;
     box-sizing: border-box;

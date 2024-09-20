@@ -1,4 +1,23 @@
 body {
+    align-items: center;
+    background-color: rgba(35, 35, 35, 0.1);
+    border: 1px solid rgba(235, 235, 235, 0.1);
+    border-radius: 15px;
+    color: white;
+    font-size:larger;
+    position: relative;
+    background-image: url(bg.png);
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: rgb(189, 189, 189);
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+
+
+body {
     background-image: url(bg.png);
     font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     background-color: rgb(189, 189, 189);
