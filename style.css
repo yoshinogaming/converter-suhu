@@ -27,12 +27,12 @@ body {
 }
 
 .form-group {
-    margin-bottom: 25px;
+    margin-bottom: 20px;
 }
 
 .form-group label {
     display: block;
-    margin-bottom: 25px;
+    margin-bottom: 20px;
 }
 
 .form-group input,
